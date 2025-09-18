@@ -1,0 +1,18 @@
+A tömb adatszerkezet --> array
+Azonos típusú adatokból többet tárolunk, az egyes adatokat a sorszámukkal azonosítjuk. Hasonló, mint Pythonban a lista, de ez nem bõvíthetõ, vagyis statikus az elemek száma.
+Tömb létrehozása a "new" kulcsszóval történik (példányosítunk), meg kell adnunk a maximális elemszámot!
+Pl.
+int[] numbers = new int[5]; //ez egy 5 elemû, egész számokat tartalmazó tömb lesz
+Az elemek sorszámozása a 0 index-szel kezdõdik. Az utolsó index eggyel kevesebb, mint az elemszám. Ha ettõl nagyobb indexre pbálunk hivatkozni, akkor System.IndexOutOfRangeException kivételt vált ki.
+
+A tömbhöz szorosan kötõdik a for ciklus. Felépítése: 
+for (int i = 0; i < length; i++) // ciklus fej, i a ciklusváltozó(index)
+{
+    //ciklus mag, ezt ismétli a ciklus
+}
+                
+A tömb bejárása, ha nincs szükségünk az indexre, történhet a foreach utasítással:
+foreach (int item in numbers)
+{
+     //a ciklusmagban az itemet használjuk fel, ami minden egyes iteráció során felveszi a tömb következõ elemének értékét      
+}
